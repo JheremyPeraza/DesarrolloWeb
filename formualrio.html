@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Fieldset y Legend</title>
+    <style>
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 50px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 100vh; /* Opcional, esto centra el formulario verticalmente en la ventana */
+        }
+
+        #nombre {
+            width: 40px; /* Ancho del input */
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <div  class="container">
+        <form>
+            <fieldset>
+                <legend>Datos Personal</legend>
+                <label for="provincia">Provincia</label>
+                <select id="frutas" name="frutas">
+                    <option value="manzana">-selecciona-</option>
+                    <option value="banana">Banana</option>
+                    <option value="uva">Uva</option>
+                    <option value="naranja">Naranja</option>
+                </select>
+
+                <label for="Fnacimiento">Fecha de Nacimiento</label>
+                <input type="text" id="nombre" name="nombre" > de
+                <select id="opciones" name="opciones">
+                  <option value="opcion1">Opción 1</option>
+                  <option value="opcion2">Opción 2</option>
+                  <option value="opcion3">Opción 3</option>
+                  <option value="opcion1">Opción 1</option>
+                  <option value="opcion2">Opción 2</option>
+                  <option value="opcion3">Opción 3</option>
+                  <option value="opcion1">Opción 1</option>
+                  <option value="opcion2">Opción 2</option>
+                  <option value="opcion3">Opción 3</option>
+                  <option value="opcion1">Opción 1</option>
+                  <option value="opcion2">Opción 2</option>
+                </select>
+                de <input type="text" id="nombre" name="nombre" >
+
+                <label for="Tinteres">Temas de interes</label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

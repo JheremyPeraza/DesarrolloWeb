@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Fórmula 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .map-container {
+            position: relative;
+        }
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .map-container map {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal de Fórmula 1</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Resultados</a>
+        <a href="#">Calendario</a>
+    </nav>
+    <main>
+        <h2>Circuitos de Fórmula 1</h2>
+        <div class="map-container">
+            <img src="circuit-map.jpg" alt="Mapa de Circuitos de Fórmula 1" usemap="#circuit-map">
+            <map name="circuit-map">
+                <area shape="rect" coords="50,100,150,200" href="circuit1.html" alt="Circuito 1">
+                <area shape="rect" coords="200,50,300,150" href="circuit2.html" alt="Circuito 2">
+                <area shape="circle" coords="400,150,50" href="circuit3.html" alt="Circuito 3">
+            </map>
+        </div>
+        <h2>Video destacado</h2>
+        <object data="video.mp4" width="600" height="400">
+            <param name="autoplay" value="true">
+            <param name="loop" value="true">
+            <embed src="video.mp4" type="video/mp4" width="600" height="400" autoplay="true" loop="true">
+        </object>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2024 Portal de Fórmula 1</p>
+    </footer>
+</body>
+</html>
